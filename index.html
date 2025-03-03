@@ -18,6 +18,44 @@
         {
             color: yellow;
         }
+        .boton {
+            text-decoration: none;
+            background-color: rgb(152, 179, 255);
+            color: black;
+            padding: 5px 10px;
+            margin: 5px;
+            font-family: "Poppins", sans-serif;
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .boton:hover {
+            background-color: black;
+            color: rgb(152, 179, 255);
+            cursor: pointer;
+        }
+
+        .boton_parcial2 {
+            text-decoration: none;
+            background-color: rgb(255, 131, 168);
+            color: black;
+            padding: 5px 10px;
+            margin: 5px;
+            font-family: "Poppins", sans-serif;
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .boton_parcial2:hover {
+            background-color: black;
+            color: rgb(255, 131, 168);
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
@@ -105,19 +143,15 @@
             <li>JavaScript</li>
             <li>Sitios Responsive</li>
         </ol>
-        <ul>
-            <li>Inicio</li>
-            <li>Parcial 1</li>
-                <ol>
-                    <li><a href="#">Práctica 1</a></li>
-                    <li><a target="_blank" href="practica_2.html">Práctica 2</a></li>
-                    <li><a target="_blank" href="practica_3.html">Práctica 3</a></li>
-                    <li><a target="_blank" href="examenpracticop1.html">Examen Práctico</a></li>
-                </ol>
-            <li>Parcial 2</li>
-            <li>Parcial 3</li>
-            <li>Proyecto Final</li>
-        </ul>
+
+        <h3>Parcial 1:</h3>
+        <a href="#" class="boton">Práctica 1</a>
+        <a target="_blank" href="practica_2.html" class="boton">Práctica 2</a>
+        <a target="_blank" href="practica_3.html" class="boton">Práctica 3</a>
+        <a target="_blank" href="examenpracticop1.html" class="boton">Práctica - Examen práctico</a>
+        <h3>Parcial 2:</h3>
+        <a target="_blank" href="practica_1_p2.html" class="boton_parcial2">Práctica 1</a>
+        <h3>Parcial 3:</h3>
     </section>
 </body>
 </html> 

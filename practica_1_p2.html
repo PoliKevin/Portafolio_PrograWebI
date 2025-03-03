@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - Nike México</title>
+    <link rel="shortcut icon" href="img/upslp_logo.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(182, 240, 255);
+            color: rgb(42, 110, 165);
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        fieldset {
+            border: none;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            text-align: left;
+        }
+        td {
+            padding: 8px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: rgb(42, 116, 165);
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: rgb(0, 139, 86);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nike México</h1>
+        <h2>Registro de Usuario</h2>
+    </header>
+
+    <form action="" enctype="text/plain" method="post">
+        <fieldset>
+            <legend>Información de Usuario</legend>
+            <table>
+                <tr>
+                    <td><label for="nombres">Nombre(s)*</label></td>
+                    <td><input type="text" name="nombres" id="nombres" placeholder="Tu/s nombre/s" maxlength="30" required></td>
+                </tr>
+                <tr>
+                    <td><label for="apellido_paterno">Apellido paterno*</label></td>
+                    <td><input type="text" name="apellido_paterno" id="apellido_paterno" placeholder="Primer apellido" maxlength="30" required></td>
+                </tr>
+                <tr>
+                    <td><label for="apellido_materno">Apellido materno*</label></td>
+                    <td><input type="text" name="apellido_materno" id="apellido_materno" placeholder="Segundo apellido" maxlength="30" required></td>
+                </tr>
+                <tr>
+                    <td><label for="username">Nombre de usuario*</label></td>
+                    <td><input type="text" name="username" id="username" placeholder="¡Usa un nombre único!" maxlength="20" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">Correo electrónico*</label></td>
+                    <td><input type="email" name="mail" id="mail" placeholder="usuario@ejemplo.com" maxlength="50" required></td>
+                </tr>
+                <tr>
+                    <td><label for="contraseña">Contraseña*</label></td>
+                    <td><input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" maxlength="20" required></td>
+                </tr>
+                <tr>
+                    <td><label for="fechanacimiento">Fecha de nacimiento*</label></td>
+                    <td><input type="date" name="fechanacimiento" id="fechanacimiento" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de Factura</legend>
+            <table>
+                <tr>
+                    <td><label for="estado">Estado*</label></td>
+                    <td>
+                        <select name="estado" id="estado" required>
+                            <option value="" disabled selected>Selecciona tu estado</option>
+                            <option value="Aguascalientes">Aguascalientes</option>
+                            <option value="Baja California">Baja California</option>
+                            <option value="Baja California Sur">Baja California Sur</option>
+                            <option value="Campeche">Campeche</option>
+                            <option value="Chiapas">Chiapas</option>
+                            <option value="Chihuahua">Chihuahua</option>
+                            <option value="Coahuila">Coahuila</option>
+                            <option value="Colima">Colima</option>
+                            <option value="CDMX">Ciudad de México</option>
+                            <option value="Durango">Durango</option>
+                            <option value="Estado de México">Estado de México</option>
+                            <option value="Guanajuato">Guanajuato</option>
+                            <option value="Guerrero">Guerrero</option>
+                            <option value="Hidalgo">Hidalgo</option>
+                            <option value="Jalisco">Jalisco</option>
+                            <option value="Michoacán">Michoacán</option>
+                            <option value="Morelos">Morelos</option>
+                            <option value="Nayarit">Nayarit</option>
+                            <option value="Nuevo León">Nuevo León</option>
+                            <option value="Oaxaca">Oaxaca</option>
+                            <option value="Puebla">Puebla</option>
+                            <option value="Querétaro">Querétaro</option>
+                            <option value="Quintana Roo">Quintana Roo</option>
+                            <option value="San Luis Potosí">San Luis Potosí</option>
+                            <option value="Sinaloa">Sinaloa</option>
+                            <option value="Sonora">Sonora</option>
+                            <option value="Tabasco">Tabasco</option>
+                            <option value="Tamaulipas">Tamaulipas</option>
+                            <option value="Tlaxcala">Tlaxcala</option>
+                            <option value="Veracruz">Veracruz</option>
+                            <option value="Yucatán">Yucatán</option>
+                            <option value="Zacatecas">Zacatecas</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="codigopostal">C.P.*</label></td>
+                    <td><input type="number" name="codigopostal" id="codigopostal" min="10000" max="99999" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="terminos" id="terminos" required>
+                        <label for="terminos">Acepto los términos y condiciones.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Listo"></td>
+                    <td><input type="reset" value="Restablecer"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <footer>
+        <h6>Página hecha por Kevin Cerda</h6>
+    </footer>
+</body>
+</html>
