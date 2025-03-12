@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "titles";
+    src: url(fonts/Archivo_Black/ArchivoBlack-Regular.ttf);
+}
+@font-face {
+    font-family: "subtitles";
+    src: url(fonts/Rowdies/Rowdies-Regular.ttf);
+}
+@font-face {
+    font-family: "extsubtitles";
+    src: url(fonts/Rowdies/Rowdies-Light.ttf);
+}
+@font-face {
+    font-family: "text";
+    src: url(fonts/Noto_Sans/NotoSans-VariableFont_wdth\,wght.ttf);
+}
+body
+{
+    background-color: #1A1A2E;
+    padding: 0 5% 2% 5%;
+}
+.titulos
+{
+    font-family: "titles";
+    text-align: center;
+    color: #ba98fd;
+}
+.datos
+{
+    color: #A1B4D7;
+}
+.datos h2
+{
+    font-family: "subtitles";
+    color: #FF79C6;
+}
+.autobiografia h2
+{
+    font-family: "subtitles";
+    color: #FF79C6;
+}
+.autobiografia h3
+{
+    font-family: "subtitles";
+    color: #fffd79;
+}
+.carrera h2
+{
+    font-family: "subtitles";
+    margin: 50px 0 -5px 0;
+    color: #FF79C6;
+}
+p
+{
+    font-family: "text";
+    text-align: justify;
+    color: #CCCCCC;
+}
+ul
+{
+    font-family: "text";
+    color: #CCCCCC;
+}
+ol
+{
+    font-family: "text";
+    color: #CCCCCC;
+}
+.botones h3
+{
+    font-family: "extsubtitles";
+    color: azure;
+    font-size: 22px;
+}
+.botonesP1 a
+{
+    font-family: "text";
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #FF6F61;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    margin: 20px 5px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.botonesP1 a:hover
+{
+    box-shadow: 0 0 10px 5px #FFB3A6;
+}
+.botonesP2 a
+{
+    font-family: "text";
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #2196F3;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    margin: 20px 5px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.botonesP2 a:hover
+{
+    box-shadow: 0 0 10px 5px #6EC1FF;
+}
+.botonesP3 a
+{
+    font-family: "text";
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #FFCA28;
+    color: #000000;
+    padding: 10px 20px;
+    margin: 20px 5px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.botonesP3 a:hover
+{
+    box-shadow: 0 0 10px 5px #FFE082;
+}
