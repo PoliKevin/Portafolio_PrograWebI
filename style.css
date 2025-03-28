@@ -116,6 +116,10 @@ ol
     border-radius: 10px;
     transition: 0.3s ease-in-out;
 }
+.botonesP3 a:hover
+{
+    box-shadow: 0 0 10px 5px #FFE082;
+}
 .final a
 {
     font-family: "text";
