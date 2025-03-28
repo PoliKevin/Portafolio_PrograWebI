@@ -188,3 +188,12 @@ footer
     color: white;
 }
 
+@media (max-width: 1919px)
+{
+    .bloque
+    {
+        width: 350px;
+        padding: 5px;
+        margin: 20px;
+    }
+}

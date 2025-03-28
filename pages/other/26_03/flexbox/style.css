@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "textFont";
+    src: url(../../../../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+*
+{
+    font-family: textFont;
+}
+
+.contenedorFlexible
+{
+    display: flex; /* Caja flexible */
+    background: rgb(133, 137, 139);
+    /*flex-direction: row-reverse;
+    flex-wrap: nowrap;*/
+    flex-flow: row nowrap; /*Para no usar funciones por separado*/
+    justify-content: center; /* Alineación horizontal */
+    align-items: center; /* Alineación vertical*/
+}
+
+.contenedorFlexible div
+{
+    background: lightblue;
+    margin: 13px;
+    width: 150px;
+    padding: 12px;
+    text-align: center;
+}
+
+@media (max-width: 500px) /* Cambia las propiedades según la condición que escribas dentro de los parentesís */
+{
+    .contenedorFlexible
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
