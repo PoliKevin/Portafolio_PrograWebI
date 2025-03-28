@@ -120,3 +120,19 @@ ol
 {
     box-shadow: 0 0 10px 5px #FFE082;
 }
+.botonesP3 a
+{
+    font-family: "text";
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #28e6ff;
+    color: #000000;
+    padding: 10px 20px;
+    margin: 20px 5px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.botonesP3 a:hover
+{
+    box-shadow: 0 0 10px 5px #8ef2ff;
+}
