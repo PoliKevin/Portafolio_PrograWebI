@@ -1,0 +1,65 @@
+@font-face
+{
+    font-family: "titleFont";
+    src: url(../../../fonts/Jaini/Jaini-Regular.ttf) format("truetype");
+}
+@font-face 
+{
+    font-family: "subtitleFont";
+    src: url(../../../fonts/Rowdies/Rowdies-Regular.ttf) format("truetype");
+}
+@font-face
+{
+    font-family: "parrafFont";
+    src: url(../../../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf) format("truetype");
+}
+ul
+{
+    list-style-type: none;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: lightgreen;
+    position: fixed;
+    overflow: auto;
+}
+li a
+{
+    display: block;
+    background-color: lightgreen;
+    color: green;
+    padding: 12px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.activo
+{
+    background-color: greenyellow;
+    color: rgb(106, 107, 106);
+    font-weight: bold;
+}
+li a:hover:not(.activo)
+{
+    background-color: greenyellow;
+    color: darkgreen;
+    font-weight: bold;
+}
+.capa1
+{
+    margin-left: 22%;
+}
+p
+{
+    font-family: "parrafFont";
+    text-align: justify;
+}
+h1
+{
+    font-family: "titleFont";
+    font-size: 40px;
+}
+h2
+{
+    font-family: "subtitleFont";
+}
