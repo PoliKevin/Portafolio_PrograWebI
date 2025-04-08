@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen práctico parcial 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const boton = document.querySelector('.boton');
+            const imagenes = document.querySelectorAll('.imgContainer img');
+            
+            boton.addEventListener('mouseover', function() {
+                imagenes.forEach(function(img) {
+                    img.style.display = 'none';
+                });
+            });
+            // jijijiji :)
+            boton.addEventListener('mouseout', function() {
+                imagenes.forEach(function(img) {
+                    img.style.display = 'block';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>EXAMEN PRÁCTICO PARCIAL 2</h1>
+    <h3>Kevin Francisco Cerda Esparza</h3>
+    <div class="botonContainer">
+        <p class="boton">Oculta las imagenes</p>
+    </div>
+    
+    <div class="imgContainer">
+        <img src="img/Veracruz1.webp" alt="">
+        <img src="img/Veracruz2.jpeg" alt="">
+        <img src="img/Veracruz3.jpeg" alt="">
+        <img src="img/Veracruz4.avif" alt="">
+    </div>
+</body>
+</html>
