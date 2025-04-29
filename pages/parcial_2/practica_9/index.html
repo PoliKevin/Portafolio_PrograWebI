@@ -3,64 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demostración de Unidades CSS</title>
+    <title>Unidades CSS Básicas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Unidades CSS en Acción</h1>
-        <p>Una demostración de unidades de medida relativas y absolutas en CSS</p>
+        <h1>Unidades de Medida en CSS</h1>
     </header>
-
-    <div class="contenedor-principal">
-        <section class="tarjetas">
-            <div class="tarjeta">
-                <h2>Unidades Relativas</h2>
-                <p>Las unidades relativas cambian basadas en otros factores como el tamaño de fuente del elemento padre o el tamaño del viewport.</p>
-                <p><strong>Ejemplos:</strong> em, rem, %, vh, vw, vmin, vmax, ex, ch</p>
-                <a href="#" class="boton">Aprende más</a>
+    
+    <div class="contenedor">
+        <div class="unidad">
+            <div class="rectangulo px"></div>
+            <div class="descripcion">
+                <h3>Píxeles (px)</h3>
+                <p>Unidad absoluta. Se usa para medidas precisas que no deben cambiar. Ideal para bordes, sombras y elementos pequeños.</p>
             </div>
-
-            <div class="tarjeta">
-                <h2>Unidades Absolutas</h2>
-                <p>Las unidades absolutas tienen un valor fijo independiente de cualquier otro factor. Son útiles cuando se conoce el medio de salida.</p>
-                <p><strong>Ejemplos:</strong> px, pt, pc, in, cm, mm</p>
-                <a href="#" class="boton">Aprende más</a>
+        </div>
+        
+        <div class="unidad">
+            <div class="rectangulo porcentaje"></div>
+            <div class="descripcion">
+                <h3>Porcentaje (%)</h3>
+                <p>Unidad relativa al elemento padre. Útil para diseños responsivos y anchos que deben adaptarse al contenedor.</p>
             </div>
-
-            <div class="tarjeta">
-                <h2>Mejores Prácticas</h2>
-                <p>En diseño web moderno, es recomendable usar principalmente unidades relativas para crear layouts flexibles y accesibles.</p>
-                <p>Las unidades absolutas son más útiles para impresión.</p>
-                <a href="#" class="boton">Aprende más</a>
+        </div>
+        
+        <div class="unidad">
+            <div class="rectangulo em"></div>
+            <div class="descripcion">
+                <h3>Em (em)</h3>
+                <p>Unidad relativa al tamaño de fuente del elemento padre. Buena para márgenes y paddings relacionados con el texto.</p>
             </div>
-        </section>
-
-        <blockquote>
-            "El buen diseño web responde a su entorno. Las unidades de medida adecuadas son fundamentales para crear experiencias adaptables."
-        </blockquote>
-
-        <section class="caracteristicas">
-            <h2>Unidades Utilizadas en Esta Página</h2>
-            <ul>
-                <li><strong>rem:</strong> Relativo al tamaño de fuente del elemento raíz (html)</li>
-                <li><strong>em:</strong> Relativo al tamaño de fuente del elemento padre</li>
-                <li><strong>%:</strong> Porcentaje relativo al elemento padre</li>
-                <li><strong>vh/vw:</strong> Porcentaje relativo a la altura/anchura del viewport</li>
-                <li><strong>vmin:</strong> El menor valor entre vh y vw</li>
-                <li><strong>ex:</strong> Relativo a la altura de la letra 'x' de la fuente actual</li>
-                <li><strong>ch:</strong> Relativo al ancho del carácter '0' de la fuente actual</li>
-                <li><strong>px:</strong> Píxeles (unidad absoluta para pantallas)</li>
-                <li><strong>cm:</strong> Centímetros (unidad absoluta física)</li>
-                <li><strong>mm:</strong> Milímetros (unidad absoluta física)</li>
-                <li><strong>in:</strong> Pulgadas (unidad absoluta física)</li>
-                <li><strong>pt:</strong> Puntos (unidad absoluta, tradicionalmente para impresión)</li>
-            </ul>
-        </section>
+        </div>
+        
+        <div class="unidad">
+            <div class="rectangulo rem"></div>
+            <div class="descripcion">
+                <h3>Rem (rem)</h3>
+                <p>Unidad relativa al tamaño de fuente del elemento raíz (html). Útil para mantener proporciones consistentes en toda la página.</p>
+            </div>
+        </div>
+        
+        <div class="unidad">
+            <div class="rectangulo vw"></div>
+            <div class="descripcion">
+                <h3>Viewport Width (vw)</h3>
+                <p>Unidad relativa al ancho de la ventana. 1vw = 1% del ancho del viewport. Útil para elementos que deben escalarse con el tamaño de la ventana.</p>
+            </div>
+        </div>
+        
+        <div class="unidad">
+            <div class="rectangulo vh"></div>
+            <div class="descripcion">
+                <h3>Viewport Height (vh)</h3>
+                <p>Unidad relativa a la altura de la ventana. 1vh = 1% de la altura del viewport. Útil para alturas de secciones basadas en la pantalla.</p>
+            </div>
+        </div>
+        
+        <div class="unidad">
+            <div class="rectangulo cm"></div>
+            <div class="descripcion">
+                <h3>Centímetros (cm)</h3>
+                <p>Unidad absoluta física. Principalmente útil para medios de impresión y cuando se necesitan medidas físicas reales.</p>
+            </div>
+        </div>
+        
+        <div class="unidad">
+            <div class="rectangulo mm"></div>
+            <div class="descripcion">
+                <h3>Milímetros (mm)</h3>
+                <p>Unidad absoluta física. Similar a cm pero más pequeña, útil para ajustes finos en medios de impresión.</p>
+            </div>
+        </div>
+        
+        <div class="unidad">
+            <div class="rectangulo in"></div>
+            <div class="descripcion">
+                <h3>Pulgadas (in)</h3>
+                <p>Unidad absoluta física. Una pulgada equivale a 2.54cm, utilizada principalmente para medios de impresión.</p>
+            </div>
+        </div>
+        
+        <div class="unidad">
+            <div class="rectangulo pt"></div>
+            <div class="descripcion">
+                <h3>Puntos (pt)</h3>
+                <p>Unidad absoluta. Un punto es aproximadamente 1/72 de pulgada, tradicionalmente usado para tamaños de fuente en impresión.</p>
+            </div>
+        </div>
+        
+        <div class="unidad">
+            <div class="rectangulo pc"></div>
+            <div class="descripcion">
+                <h3>Picas (pc)</h3>
+                <p>Unidad absoluta. Una pica equivale a 12 puntos, utilizada en tipografía e impresión.</p>
+            </div>
+        </div>
+        
+        <div class="unidad">
+            <div class="rectangulo ch"></div>
+            <div class="descripcion">
+                <h3>Character (ch)</h3>
+                <p>Unidad relativa al ancho del carácter "0" de la fuente. Útil para establecer anchos de texto y controlar líneas de texto.</p>
+            </div>
+        </div>
+        
+        <div class="unidad">
+            <div class="rectangulo ex"></div>
+            <div class="descripcion">
+                <h3>Ex (ex)</h3>
+                <p>Unidad relativa a la altura de la letra "x" minúscula. Útil para medidas que deben ser proporcionales a la altura del texto.</p>
+            </div>
+        </div>
     </div>
-
+    
     <footer>
         <p>Kevin Cerda - 187887</p>
+        <p>Universidad Politécnica de San Luis Potosí</p>
     </footer>
 </body>
 </html>

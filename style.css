@@ -14,125 +14,152 @@
     font-family: "text";
     src: url(fonts/Noto_Sans/NotoSans-VariableFont_wdth\,wght.ttf);
 }
-body
-{
-    background-color: #1A1A2E;
+
+body {
+    background-color: #f8f9fa;
     padding: 0 5% 2% 5%;
+    color: #333;
+    line-height: 1.6;
 }
-.titulos
-{
+
+.titulos {
     font-family: "titles";
     text-align: center;
-    color: #ba98fd;
+    color: #3a86ff;
 }
-.datos
-{
-    color: #A1B4D7;
+
+.datos {
+    color: #4a5568;
 }
-.datos h2
-{
+
+.datos h2 {
     font-family: "subtitles";
-    color: #FF79C6;
+    color: #2b6cb0;
 }
-.autobiografia h2
-{
+
+.autobiografia h2 {
     font-family: "subtitles";
-    color: #FF79C6;
+    color: #2b6cb0;
 }
-.autobiografia h3
-{
+
+.autobiografia h3 {
     font-family: "subtitles";
-    color: #fffd79;
+    color: #4361ee;
 }
-.carrera h2
-{
+
+.carrera h2 {
     font-family: "subtitles";
     margin: 50px 0 -5px 0;
-    color: #FF79C6;
+    color: #2b6cb0;
 }
-p
-{
+
+p {
     font-family: "text";
     text-align: justify;
-    color: #CCCCCC;
+    color: #4a5568;
 }
-ul
-{
+
+ul, ol {
     font-family: "text";
-    color: #CCCCCC;
+    color: #4a5568;
 }
-ol
-{
-    font-family: "text";
-    color: #CCCCCC;
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #b5cdeb;
+    margin: 20px 0;
 }
-.botones h3
-{
+
+.botones h3 {
     font-family: "extsubtitles";
-    color: azure;
+    color: #2d3748;
+    text-align: center;
     font-size: 22px;
 }
-.botonesP1 a
-{
+
+.botones a {
+    width: 200px;
+    text-align: center;
+    color: #333;
+}
+
+.botones a:hover {
+    transform: scale(1.075);
+}
+
+.botonesP1, .botonesP2, .botonesP3, .final {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.botonesP1 a {
     font-family: "text";
     font-weight: bold;
     text-decoration: none;
-    background-color: #FF6F61;
-    color: #FFFFFF;
+    background-color: #f7673c;
     padding: 10px 20px;
     margin: 20px 5px;
     border-radius: 10px;
     transition: 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-.botonesP1 a:hover
-{
-    box-shadow: 0 0 10px 5px #FFB3A6;
+
+.botonesP1 a:hover {
+    box-shadow: 0 4px 12px rgba(240, 114, 76, 0.5);
+    background-color: #da3b3b;
 }
-.botonesP2 a
-{
+
+.botonesP2 a {
     font-family: "text";
     font-weight: bold;
     text-decoration: none;
-    background-color: #2196F3;
-    color: #FFFFFF;
+    background-color: #3ae1ff;
     padding: 10px 20px;
     margin: 20px 5px;
     border-radius: 10px;
     transition: 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-.botonesP2 a:hover
-{
-    box-shadow: 0 0 10px 5px #6EC1FF;
+
+.botonesP2 a:hover {
+    box-shadow: 0 4px 12px rgba(58, 134, 255, 0.5);
+    background-color: #2a75e8;
 }
-.botonesP3 a
-{
+
+.botonesP3 a {
     font-family: "text";
     font-weight: bold;
     text-decoration: none;
-    background-color: #FFCA28;
-    color: #000000;
+    background-color: #ffd932;
     padding: 10px 20px;
     margin: 20px 5px;
     border-radius: 10px;
     transition: 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-.botonesP3 a:hover
-{
-    box-shadow: 0 0 10px 5px #FFE082;
+
+.botonesP3 a:hover {
+    box-shadow: 0 4px 12px rgba(236, 233, 56, 0.5);
+    background-color: #ffb414;
 }
-.final a
-{
+
+.final a {
     font-family: "text";
     font-weight: bold;
     text-decoration: none;
-    background-color: #28e6ff;
-    color: #000000;
+    background-color: #c207fb;
+    color: white;
     padding: 10px 20px;
     margin: 20px 5px;
     border-radius: 10px;
     transition: 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-.final a:hover
-{
-    box-shadow: 0 0 10px 5px #8ef2ff;
+
+.final a:hover {
+    box-shadow: 0 4px 12px rgba(243, 7, 251, 0.5);
+    background-color: #e000bb;
 }
