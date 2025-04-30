@@ -1,0 +1,89 @@
+*
+{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    margin: 25px 0;
+}
+
+h1, h2
+{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.containerFormulario
+{
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario
+{
+    width: 75%;
+    padding: 20px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgba(136, 145, 145, 0.774);
+    justify-items: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
+}
+
+.inputText
+{
+    width: 90%;
+    height: 35px;
+    border-radius: 5px;
+    margin: 15px 0;
+    padding: 5px 20px;
+    border: none;
+    transition: all 0.2s ease;
+}
+.inputText:hover
+{
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.322);
+}
+
+input[type="button"]
+{
+    padding: 5px;
+    margin: 0 5px;
+    border: none;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.322);
+    transition: all 0.2s ease;
+}
+input[type="button"]:hover
+{
+    box-shadow: 3px 5px 10px rgba(116, 176, 255, 0.568);
+}
+
+.containerResultados
+{
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.resultados
+{
+    align-content: center;
+    width: 75%;
+    height: 100px;
+    padding: 20px;
+    color: rgb(164, 255, 128);
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: rgba(136, 145, 145, 0.774);
+    justify-items: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
+}

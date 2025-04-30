@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Operaciones matemáticas</h1>
+    <div class="containerFormulario">
+        <div class="formulario">
+        <form>
+            <label for="numeroUno">Escribe el primer número:</label><br>
+            <input class="inputText" type="text" name="numeroUno" id="numeroUno" placeholder="Número">
+            <br>
+            <label for="numeroDos">Escribe el segundo número:</label><br>
+            <input class="inputText" type="text" name="numeroDos" id="numeroDos" placeholder="Número">
+            <br>
+            <input type="button" name="suma" id="suma" value="SUMA" onclick="sumar()">
+            <input type="button" name="resta" id="resta" value="RESTA" onclick="restar()">
+            <input type="button" name="mult" id="mult" value="PRODUCTO" onclick="multiplicar()">
+            <input type="button" name="division" id="division" value="DIVISIÓN" onclick="dividir()">
+            </form>
+        </div>
+    </div>
+    
+    
+    <h2>Resultado:</h2>
+    <div class="containerResultados">
+        <div class="resultados">
+            <p id="resultado"></p>
+        </div>
+    </div>
+    
+</body>
+</html>
