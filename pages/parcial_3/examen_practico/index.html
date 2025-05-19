@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamiento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PAGOS DE ESTACIONAMIENTO</h1>
+    <form id="pago">
+        <label for="horas">Horas estacionado:</label> <br>
+        <input type="number" name="horas" id="horas" min="1">
+        <br><br>
+        <label for="typeOfCar">Tipo de automóvil:</label> <br>
+        <select name="typeOfCar" id="typeOfCar">
+            <option value="20">Auto chico</option>
+            <option value="30">Camioneta</option>
+            <option value="40">Camión</option>
+        </select>
+        <br><br>
+        <button type="button" id="calcularCosto">Calcular el total a pagar</button>
+    </form>
+    <div id="resultado">
+    </div>
+    <script>
+        const tipoAuto = document.getElementById("typeOfCar");
+        const horas = document.getElementById("horas");
+        const boton = document.getElementById("calcularCosto");
+        const resultado = document.getElementById("resultado");
+    
+        boton.addEventListener("click", function() {
+          const tarifa = parseFloat(tipoAuto.value);
+          const cantidadHoras = parseInt(horas.value);
+    
+          if (!cantidadHoras || cantidadHoras < 1) {
+            resultado.innerText = "Por favor, ingresa un número válido de horas.";
+            return;
+          }
+    
+          const costoTotal = tarifa * cantidadHoras;
+    
+          resultado.innerText = `Costo total: $${costoTotal}`;
+        });
+      </script>
+    
+</body>
+</html>

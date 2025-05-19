@@ -1,0 +1,38 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+h1
+{
+    padding: 2vw;
+    background-color: rgb(70, 62, 138);
+    color: azure;
+}
+form
+{
+    margin: 10vh 0;
+    width: 70vw;
+    justify-self: center;
+    text-align: left;
+}
+input, select
+{
+    width: 90%;
+    height: 25px;
+    padding: 0 1vw;
+}
+select
+{
+    text-align: center;
+}
+button
+{
+    width: 90%;
+    height: 40px;
+}
