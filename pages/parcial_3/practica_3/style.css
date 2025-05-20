@@ -1,0 +1,26 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1
+{
+    padding: 2vw;
+    background-color: rgb(70, 62, 138);
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: crimson;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.13);
+}
+
+.container
+{
+    width: 80vw;
+    justify-self: center;
+    background-color: rgb(230, 230, 230);
+    border-radius: 15px;
+    margin: 5vh;
+    padding: 50px;
+}

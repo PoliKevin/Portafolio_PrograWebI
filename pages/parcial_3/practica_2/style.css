@@ -1,0 +1,67 @@
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    margin: 15px;
+    background-color: rgb(45, 61, 133);
+}
+form
+{
+    background-color: rgb(236, 243, 255);
+    justify-self: center;
+    padding: 15px;
+    border-radius: 15px;
+    width: 50%;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.493);
+    text-align: center;
+}
+label
+{
+    font-weight: bold;
+}
+input[type="user"], input[type="password"], select
+{
+    border: none;
+    border-radius: 7px;
+    padding: 5px 20px;
+    margin: 15px 0;
+    height: 30px;
+    width: 75%;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.493);
+}
+input[type="radio"]
+{
+    margin: 15px 0;
+}
+
+input[type="button"]
+{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    margin: 25px 0;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.493);
+}
+
+.datos
+{
+    margin-top: 30px;
+    display: flex;
+    justify-self: center;
+}
+.containerDatos
+{
+    background-color: rgb(236, 243, 255);
+    justify-self: center;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 30px;
+    width: 50%;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.493);
+    text-align: center;
+    font-weight: 600;
+}

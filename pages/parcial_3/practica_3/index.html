@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de C</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>¿Cuánto sabes de C?</h1>
+
+    <div class="container">
+        <form id="formularioC">
+        <h3>1. ¿Qué es C?</h3>
+        <input type="radio" name="p1" value="0"> Un lenguaje de programación orientado a objetos<br>
+        <input type="radio" name="p1" value="1"> Un lenguaje de programación procedural<br>
+        <input type="radio" name="p1" value="0"> Una herramienta de hipermarcado<br><br>
+      
+        <h3>2. ¿Quién desarrolló el lenguaje C?</h3>
+        <input type="radio" name="p2" value="1"> Dennis Ritchie<br>
+        <input type="radio" name="p2" value="0"> James Gosling<br>
+        <input type="radio" name="p2" value="0"> Guido van Rossum<br><br>
+      
+        <h3>3. ¿Cuál es la extensión típica de un archivo en C?</h3>
+        <input type="radio" name="p3" value="1"> .c<br>
+        <input type="radio" name="p3" value="0"> .cpp<br>
+        <input type="radio" name="p3" value="0"> .py<br><br>
+      
+        <h3>4. ¿Qué función se utiliza para imprimir en C?</h3>
+        <input type="radio" name="p4" value="1"> printf()<br>
+        <input type="radio" name="p4" value="0"> print()<br>
+        <input type="radio" name="p4" value="0"> echo()<br><br>
+      
+        <h3>5. ¿Qué librería se incluye para usar funciones de entrada/salida en C?</h3>
+        <input type="radio" name="p5" value="1"> stdio.h<br>
+        <input type="radio" name="p5" value="0"> iostream<br>
+        <input type="radio" name="p5" value="0"> conio.h<br><br>
+      
+        <button type="button" onclick="calcularResultado()">Enviar</button>
+      </form>
+
+      <div class="containerPuntaje">
+        <div id="resultado"></div>
+        <canvas id="grafico" width="400" height="200"></canvas>
+        <br>
+        <button onclick="generarPDF()">Descargar PDF</button>
+      </div>
+    </div>
+    <!-- Chart.js para gráficos -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- jsPDF para generar PDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script>
+    function calcularResultado() {
+    let total = 0;
+    let resultados = [];
+
+    for (let i = 1; i <= 5; i++) {
+        let seleccion = document.querySelector(`input[name="p${i}"]:checked`);
+        if (seleccion) {
+        let valor = parseInt(seleccion.value);
+        total += valor;
+        resultados.push(valor);
+        } else {
+        resultados.push(0); // Si no responde, cuenta como 0
+        }
+    }
+
+    document.getElementById("resultado").innerText = `Puntaje total: ${total}/5`;
+
+    generarGrafico(resultados);
+    }
+
+    // Guardamos el gráfico para poder actualizarlo sin duplicar
+    let miGrafico = null;
+
+    function generarGrafico(datos) {
+    const ctx = document.getElementById("grafico").getContext("2d");
+
+    if (miGrafico) {
+        miGrafico.destroy(); // Si ya existe, lo destruimos antes de crear otro
+    }
+
+    miGrafico = new Chart(ctx, {
+        type: 'bar',
+        data: {
+        labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'],
+        datasets: [{
+            label: 'Puntaje por pregunta',
+            data: datos,
+            backgroundColor: '#3498db',
+            borderRadius: 5
+        }]
+        },
+        options: {
+        scales: {
+            y: {
+            beginAtZero: true,
+            max: 1,
+            ticks: { stepSize: 1 }
+            }
+        }
+        }
+    });
+    }
+
+    async function generarPDF() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    const resultado = document.getElementById("resultado").innerText;
+
+    doc.setFontSize(16);
+    doc.text("Resultado del cuestionario de C", 20, 20);
+    doc.setFontSize(12);
+    doc.text(resultado, 20, 40);
+
+    doc.save("resultado_C.pdf");
+    }
+</script>
+</body>
+</html>

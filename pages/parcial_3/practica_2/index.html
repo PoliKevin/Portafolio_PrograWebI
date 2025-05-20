@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obtener datos desde formulario con JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1></h1>
+    <form name="formulario">
+        <label for="user">Nombre de usuario:</label><br>
+        <input type="user" id="user" placeholder="John Doe"><br>
+        <label for="password">Contraseña:</label><br>
+        <input type="password" name="password" id="password"><br>
+        <label for="carrera">Selecciona tu carrera:</label><br>
+        <select name="carrera" id="carrera">
+            <option value="ITI">Ingeniería en Tecnologías de la Información</option>
+            <option value="ITEM">Ingeniería en Telemática</option>
+        </select><br>
+        <label for="genero">Selecciona tu género:</label><br>
+        <label for="genero">Masculino</label>
+        <input type="radio" name="genero" id="genero" value="Masculino"><br>
+        <label for="genero">Femenino</label>
+        <input type="radio" name="genero" id="genero" value="Femenino"><br>
+        <input type="checkbox" name="privacidad" id="privacidad">
+        <label for="privacidad">Acepto los términos y condiciones de uso y privacidad.</label><br>
+        <input type="button" name="botonEnvio" id="botonEnvio" value="Mandar datos" onclick="leer()">
+    </form>
+    <div class="containerDatos" id="datos">
+
+    </div>
+</body>
+
+</html>
